@@ -1,0 +1,68 @@
+{
+  "alloys": [
+    {
+      "id": "Ti2448",
+      "name": "Ti-2448 (wt%)",
+      "basis": "wt",
+      "composition": { "Ti": 64, "Nb": 24, "Zr": 4, "Sn": 8 },
+      "density_g_cm3": null,
+      "notes": "Default demo alloy. Use measured density for absolute thickness."
+    },
+    {
+      "id": "Ti64",
+      "name": "Ti-6Al-4V (wt%)",
+      "basis": "wt",
+      "composition": { "Ti": 90, "Al": 6, "V": 4 },
+      "density_g_cm3": 4.43,
+      "notes": "Typical aerospace Ti alloy; density is nominal handbook value."
+    },
+    {
+      "id": "Al",
+      "name": "Pure Al",
+      "basis": "wt",
+      "composition": { "Al": 100 },
+      "density_g_cm3": 2.70,
+      "notes": "Elemental aluminum."
+    },
+    {
+      "id": "Cu",
+      "name": "Pure Cu",
+      "basis": "wt",
+      "composition": { "Cu": 100 },
+      "density_g_cm3": 8.96,
+      "notes": "Elemental copper — relatively absorbing even at high energy."
+    },
+    {
+      "id": "Fe",
+      "name": "Pure Fe",
+      "basis": "wt",
+      "composition": { "Fe": 100 },
+      "density_g_cm3": 7.87,
+      "notes": "Elemental iron."
+    },
+    {
+      "id": "SS316L",
+      "name": "316L stainless (approx wt%)",
+      "basis": "wt",
+      "composition": { "Fe": 65, "Cr": 17, "Ni": 12, "Mo": 2.5, "Mn": 2, "Si": 1, "C": 0.03, "N": 0.1, "P": 0.045, "S": 0.03 },
+      "density_g_cm3": 8.0,
+      "notes": "Approximate composition; normalize before use. Prefer measured density."
+    },
+    {
+      "id": "Nb",
+      "name": "Pure Nb",
+      "basis": "wt",
+      "composition": { "Nb": 100 },
+      "density_g_cm3": 8.57,
+      "notes": "Elemental niobium."
+    },
+    {
+      "id": "Zr",
+      "name": "Pure Zr",
+      "basis": "wt",
+      "composition": { "Zr": 100 },
+      "density_g_cm3": 6.52,
+      "notes": "Elemental zirconium."
+    }
+  ]
+}

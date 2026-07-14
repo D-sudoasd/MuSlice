@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "app": "muslice",
+  "version": "1.0.0",
+  "saved_at_utc": "2026-07-14T00:00:00Z",
+  "beam": {
+    "energy_mode": "keV",
+    "energy_keV": "83.0",
+    "wavelength_A": "0.149379",
+    "source_db": "elam",
+    "cross_kind": "total",
+    "incident_angle_deg": "0"
+  },
+  "sample": {
+    "composition": {
+      "basis": "wt",
+      "elements": [
+        { "symbol": "Ti", "percent": 64 },
+        { "symbol": "Nb", "percent": 24 },
+        { "symbol": "Zr", "percent": 4 },
+        { "symbol": "Sn", "percent": 8 }
+      ]
+    },
+    "density_mode": "manual",
+    "density_g_cm3": "5.5",
+    "density_est_model": "alloy_interstitial"
+  },
+  "target": {
+    "target_mode": "T",
+    "target_T": "0.5",
+    "target_mut": "0.7",
+    "reco_mut_min": "0.5",
+    "reco_mut_max": "1.2",
+    "target_scope_total": false
+  },
+  "detector": {
+    "det_enable": true,
+    "det_L_mm": "1500",
+    "det_pixel_mm": "0.15",
+    "det_nx": "2880",
+    "det_ny": "2880",
+    "det_x0": "1440",
+    "det_y0": "1440",
+    "det_rmin_mm": "2.0",
+    "det_rmax_mm": ""
+  },
+  "layers": [
+    { "material": "Kapton (C22H10N2O5)", "t_mm": "0.10", "auto": false, "enabled": true, "rho": "1.42", "formula": "C22H10N2O5" },
+    { "material": "Air (dry)", "t_mm": "50", "auto": false, "enabled": true, "rho": "0.0012", "formula": "" },
+    { "material": "Sample (current)", "t_mm": "", "auto": true, "enabled": true, "rho": "", "formula": "" },
+    { "material": "Air (dry)", "t_mm": "50", "auto": false, "enabled": true, "rho": "0.0012", "formula": "" },
+    { "material": "Kapton (C22H10N2O5)", "t_mm": "0.10", "auto": false, "enabled": true, "rho": "1.42", "formula": "C22H10N2O5" }
+  ],
+  "exposure": {
+    "exp_ref_time_s": "1.0",
+    "exp_ref_t_sample_mm": "1.0",
+    "exp_ref_flux": "",
+    "exp_ref_Ttotal": "",
+    "exp_new_flux": "",
+    "exp_eff_ratio": "1.0",
+    "exp_snr_ratio": "1.0",
+    "exp_model": "linear",
+    "exp_use_computed_t": true,
+    "exp_new_t_sample_mm": ""
+  }
+}

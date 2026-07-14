@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Tests / tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local / machine
+99_archive/
+01_source/          # legacy pre-package snapshot (use src/muslice)
+MOVE_LOG_*.csv
+*.opju
+.DS_Store
+Thumbs.db
+.pytest_cache/
+
+# Editors
+.idea/
+.vscode/
+*.swp

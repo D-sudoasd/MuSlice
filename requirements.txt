@@ -1,0 +1,5 @@
+xraydb>=4.5
+numpy>=1.22
+matplotlib>=3.5
+# optional modern theme:
+# sv-ttk>=2.0

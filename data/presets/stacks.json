@@ -1,0 +1,46 @@
+{
+  "stacks": [
+    {
+      "id": "kapton_air_sample",
+      "name": "Kapton + Air + Sample + Air + Kapton",
+      "notes": "Default common stack for transmission cells.",
+      "layers": [
+        { "material": "Kapton (C22H10N2O5)", "t_mm": "0.10", "auto": false, "enabled": true },
+        { "material": "Air (dry)", "t_mm": "50", "auto": false, "enabled": true },
+        { "material": "Sample (current)", "t_mm": "", "auto": true, "enabled": true },
+        { "material": "Air (dry)", "t_mm": "50", "auto": false, "enabled": true },
+        { "material": "Kapton (C22H10N2O5)", "t_mm": "0.10", "auto": false, "enabled": true }
+      ]
+    },
+    {
+      "id": "sample_only",
+      "name": "Sample only",
+      "notes": "Ignore windows and air path.",
+      "layers": [
+        { "material": "Sample (current)", "t_mm": "", "auto": true, "enabled": true }
+      ]
+    },
+    {
+      "id": "be_windows",
+      "name": "Be windows + short air",
+      "notes": "Thin Be windows with short air gaps.",
+      "layers": [
+        { "material": "Beryllium (Be)", "t_mm": "0.25", "auto": false, "enabled": true },
+        { "material": "Air (dry)", "t_mm": "20", "auto": false, "enabled": true },
+        { "material": "Sample (current)", "t_mm": "", "auto": true, "enabled": true },
+        { "material": "Air (dry)", "t_mm": "20", "auto": false, "enabled": true },
+        { "material": "Beryllium (Be)", "t_mm": "0.25", "auto": false, "enabled": true }
+      ]
+    },
+    {
+      "id": "quartz_capillary",
+      "name": "Quartz wall + sample (capillary-like)",
+      "notes": "Single quartz wall thickness as a rough capillary wall budget.",
+      "layers": [
+        { "material": "Quartz (SiO2)", "t_mm": "0.02", "auto": false, "enabled": true },
+        { "material": "Sample (current)", "t_mm": "", "auto": true, "enabled": true },
+        { "material": "Quartz (SiO2)", "t_mm": "0.02", "auto": false, "enabled": true }
+      ]
+    }
+  ]
+}
