@@ -1,33 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">MuSlice</title>
-  <desc id="desc">Design transmission SXRD and SAXS sample thickness from X-ray attenuation using Beer-Lambert and xraydb mu over rho.</desc>
-  <rect width="1200" height="340" rx="28" fill="#0a1628"/>
-  <!-- beam path motif -->
-  <defs>
-    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1"/>
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.1"/>
-    </linearGradient>
-  </defs>
-  <rect x="640" y="150" width="480" height="28" fill="url(#beam)"/>
-  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif">
-    <text x="56" y="72" fill="#38bdf8" font-size="18" font-weight="700" letter-spacing="2">SXRD · SAXS · TRANSMISSION</text>
-    <text x="56" y="132" fill="#f8fafc" font-size="52" font-weight="800">MuSlice</text>
-    <text x="56" y="178" fill="#94a3b8" font-size="22">Design the sample thickness that lets the beam through.</text>
-    <text x="56" y="218" fill="#64748b" font-size="18">Beer–Lambert · xraydb μ/ρ · T or μt target · session save</text>
-    <text x="56" y="270" fill="#475569" font-size="17">透射式样品厚度快速设计 · 能量 / 成分 / 密度 → 厚度</text>
+  <desc id="desc">Design transmission SXRD and SAXS sample thickness from X-ray attenuation using Beer-Lambert and xraydb.</desc>
+  <rect width="1200" height="360" rx="26" fill="#0E2438"/>
+  <path d="M0 54H1200M690 0V360" stroke="#1C3A54"/>
+  <g transform="translate(56 42)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <text fill="#7FA3C0" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" letter-spacing="2.2">SXRD · SAXS · TRANSMISSION DESIGN</text>
+    <text y="104" fill="#F3F0E7" font-family="Georgia,'Times New Roman',serif" font-size="68" font-weight="700" letter-spacing="-1.2">MuSlice</text>
+    <text y="154" fill="#C2D4E4" font-size="23">Design the sample thickness that lets the beam through.</text>
+    <path d="M0 182H480" stroke="#2A4A66"/>
+    <g transform="translate(0 216)" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">
+      <text fill="#F3F0E7">μ/ρ</text>
+      <text x="72" fill="#7FA3C0">T or μt</text>
+      <text x="176" fill="#7FA3C0">STACK</text>
+      <text x="268" fill="#7FA3C0">SESSION JSON</text>
+    </g>
+    <text y="274" fill="#6A8AA8" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">Beer–Lambert · xraydb · MIT</text>
   </g>
-  <!-- sample slab + T-t curve -->
-  <g transform="translate(700 56)">
-    <rect width="400" height="230" rx="16" fill="#0f172a" stroke="#1e3a5f" stroke-width="2"/>
-    <!-- sample rectangle in beam -->
-    <rect x="150" y="40" width="70" height="120" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-    <text x="158" y="105" fill="#7dd3fc" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">t</text>
-    <text x="40" y="100" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">I₀</text>
-    <text x="300" y="100" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">I</text>
-    <!-- T vs t curve -->
-    <polyline points="40,200 80,175 120,155 160,140 200,128 240,120 280,114 320,110 360,107" fill="none" stroke="#a7f3d0" stroke-width="3"/>
-    <text x="40" y="220" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">T(t) · target T or μt</text>
+  <g transform="translate(730 50)">
+    <rect width="410" height="260" fill="#0A1C2E" stroke="#2A4A66"/>
+    <!-- beam -->
+    <path d="M24 120 H150" stroke="#5EC8FF" stroke-width="3" opacity="0.35"/>
+    <path d="M260 120 H386" stroke="#5EC8FF" stroke-width="3" opacity="0.55"/>
+    <rect x="150" y="70" width="110" height="100" fill="#132A42" stroke="#5EC8FF" stroke-width="1.8"/>
+    <text x="188" y="126" fill="#9FD8FF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="18">t</text>
+    <text x="36" y="112" fill="#7FA3C0" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13">I₀</text>
+    <text x="340" y="112" fill="#7FA3C0" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13">I</text>
+    <!-- T(t) -->
+    <polyline points="40,230 90,210 140,194 190,182 240,174 290,168 340,164" fill="none" stroke="#8FE3B8" stroke-width="2.2"/>
+    <text x="40" y="250" fill="#6A8AA8" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">T(t) · target transmission or μt</text>
   </g>
+  <text x="1144" y="336" text-anchor="end" fill="#4A6A88" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">D-sudoasd / MuSlice</text>
 </svg>
