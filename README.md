@@ -1,6 +1,39 @@
 <p align="center">
-  <img src="assets/readme/hero.svg" width="100%" alt="MuSlice: design transmission SXRD/SAXS sample thickness from X-ray attenuation.">
+  <img src="assets/readme/hero.png" width="100%" alt="MuSlice — Estimate sample thickness from X-ray attenuation / 根据 X 射线衰减估算样品厚度. Conceptual illustration / 概念插图。">
 </p>
+
+# MuSlice
+
+**Estimate sample thickness from X-ray attenuation**
+
+**根据 X 射线衰减估算样品厚度**
+
+[Overview / 项目概览](#overview--项目概览) · [Start / 开始使用](#start--开始使用) · [Reference / 详细说明](#reference--详细说明)
+
+## Overview / 项目概览
+
+Combine beam energy, composition, density and a target transmission to design transmission-SXRD or SAXS samples. Compare optional window layers and save the calculation context.
+
+结合能量、成分、密度与目标透射率，设计透射 SXRD 或 SAXS 样品厚度，比较可选窗口层并保存计算条件。
+
+- **Beer–Lambert calculation** — 使用 xraydb 元素衰减系数与明确输入条件。
+- **Layer budgets** — 计入窗口和空气等附加层。
+- **Session export** — 保存工程与文本或 Markdown 报告。
+
+## Start / 开始使用
+
+```powershell
+py -m pip install -r requirements.txt
+py -m muslice
+```
+
+Prefer measured density where available. Relative exposure estimates are ratios, not an absolute beam-flux calibration.
+
+有实测密度时优先采用；相对曝光估计表示比例，不是绝对束流标定。
+
+*Cover: AI-generated conceptual illustration. 封面为 AI 生成的概念插图。*
+
+## Reference / 详细说明
 
 # MuSlice
 
