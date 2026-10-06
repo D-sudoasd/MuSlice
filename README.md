@@ -23,7 +23,7 @@ Combine beam energy, composition, density and a target transmission to design tr
 ## Start / 开始使用
 
 ```powershell
-py -m pip install -r requirements.txt
+py -m pip install -e .
 py -m muslice
 ```
 
@@ -67,10 +67,11 @@ Optional window/air stacks, detector *Q*/*d* coverage, and relative exposure sca
 ```bash
 git clone https://github.com/D-sudoasd/MuSlice.git
 cd MuSlice
-pip install -r requirements.txt
-# or: pip install -e .
+python -m pip install -e .
 python -m muslice          # Windows: run.bat
 ```
+
+The editable install includes the runtime dependencies and makes the `src/muslice` package importable. Installing only `requirements.txt` does not install the package; for that source-only route, use `run.bat` on Windows or set `PYTHONPATH=src` before running the module. Python must include `tkinter`.
 
 Optional theme: `pip install sv-ttk`  
 Example session: `examples/session_83keV_Ti2448.json`  
