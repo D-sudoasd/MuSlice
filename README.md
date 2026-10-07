@@ -21,6 +21,18 @@ A desktop thickness-design tool based on Beer–Lambert attenuation and elementa
 
 仓库会话示例使用 **83 keV、Ti–24Nb–4Zr–8Sn 质量组成、手动密度 5.5 g/cm³ 和目标透射率 0.5**。这些是示例输入，不是对实测密度或实验结果的认证。可另计窗口与空气层的透射预算、探测器覆盖范围和相对曝光比例。优先输入实测密度。
 
+## 原理示意 / Principle schematic
+
+<p align="center">
+  <img src="assets/readme/principle.png" width="100%" alt="Beer–Lambert 衰减、多层透射预算与有效厚度 — conceptual schematic / 概念示意图">
+</p>
+
+*概念示意：组成、密度和能量决定衰减系数，样品与窗口等层共同影响透射率；倾斜入射增加有效路径长度。图中 T–t 曲线为模型示意，不是实测透射数据。*
+
+*Conceptual schematic: composition, density and energy determine attenuation, while sample and window layers contribute to the transmission budget; tilt increases effective path length. The T–t curve is a model illustration, not measured transmission.*
+
+[查看完整示意图 / View full-size schematic](assets/readme/principle.png)
+
 ## Features (v1.0.0)
 
 - Mass or atomic composition; alloy presets
