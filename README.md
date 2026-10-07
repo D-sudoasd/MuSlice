@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/readme/hero.png" width="100%" alt="MuSlice — Estimate sample thickness from X-ray attenuation / 根据 X 射线衰减估算样品厚度. Conceptual illustration / 概念插图。">
+</p>
+
 # MuSlice
 
 **用能量、组成、密度与目标透射率，估算透射式 SXRD / SAXS 样品厚度。**
@@ -8,14 +12,12 @@ A desktop thickness-design tool based on Beer–Lambert attenuation and elementa
 
 [![MIT](https://img.shields.io/badge/License-MIT-455A64)](LICENSE) [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB)](pyproject.toml)
 
-```mermaid
-flowchart TD
-  A[能量或波长] --> C[线性衰减系数]
-  B[组成与密度] --> C
-  C --> D[目标透射率或光学厚度]
-  D --> E[样品厚度与透射率曲线]
-  E --> F[会话 JSON 与报告]
-```
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/readme/diagrams/workflow-readme-md-1-mobile.svg">
+  <img src="assets/readme/diagrams/workflow-readme-md-1.svg" width="100%" alt="MuSlice — workflow schematic / 流程示意图">
+</picture>
+
+<sub>[Editable diagram source / 可编辑图源](assets/readme/diagrams/workflow-readme-md-1.mmd)</sub>
 
 仓库会话示例使用 **83 keV、Ti–24Nb–4Zr–8Sn 质量组成、手动密度 5.5 g/cm³ 和目标透射率 0.5**。这些是示例输入，不是对实测密度或实验结果的认证。可另计窗口与空气层的透射预算、探测器覆盖范围和相对曝光比例。优先输入实测密度。
 
